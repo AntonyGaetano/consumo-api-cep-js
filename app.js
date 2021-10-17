@@ -36,5 +36,30 @@ const buscaCep = async() =>{
     }
 }
 
+const SalvarDados = (nome,email,cep,end,num,ba,cid,es) =>{
+
+    const Dados = [nome,email,cep,end,num,ba,cid,es];
+
+    for(let i = 0; i < Dados.length; i++){
+      localStorage.setItem(`chave${i}`,Dados[i]);
+    }
+
+}
+
+document.getElementById("btn").addEventListener("click",()=>{
+ SalvarDados(
+    document.getElementById("nome").value,
+    document.getElementById("email").value,
+    document.getElementById("cep").value,
+    document.getElementById("endereco").value,
+    document.getElementById("numero").value,
+    document.getElementById("bairro").value,
+    document.getElementById("cidade").value,
+    document.getElementById("estado").value,
+
+    
+ )
+})
+
 
 document.getElementById("cep").addEventListener("focusout",buscaCep);
