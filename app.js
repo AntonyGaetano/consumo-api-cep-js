@@ -46,6 +46,25 @@ const SalvarDados = (nome,email,cep,end,num,ba,cid,es) =>{
 
 }
 
+const AtribuiValor = () =>{
+    document.getElementById("nome").value = localStorage.getItem("chave0")
+
+    document.getElementById("email").value= localStorage.getItem("chave1")
+
+    document.getElementById("cep").value = localStorage.getItem("chave2")
+
+    document.getElementById("endereco").value = localStorage.getItem("chave3")
+
+    document.getElementById("numero").value= localStorage.getItem("chave4")
+
+    document.getElementById("bairro").value= localStorage.getItem("chave5")
+
+    document.getElementById("cidade").value = localStorage.getItem("chave6")
+
+    document.getElementById("estado").value= localStorage.getItem("chave7")
+    
+}
+
 document.getElementById("btn").addEventListener("click",()=>{
  SalvarDados(
     document.getElementById("nome").value,
@@ -57,7 +76,7 @@ document.getElementById("btn").addEventListener("click",()=>{
     document.getElementById("cidade").value,
     document.getElementById("estado").value,
 
-    
+    AtribuiValor()
  )
 })
 
