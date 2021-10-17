@@ -97,6 +97,13 @@ body {
     font-size: 20px;
     font-weight: bold;
     border-radius: 2px;
+    transition: 0.6s;
+}
+
+.container button:hover{
+    background-color: #000;
+    border:1px solid  var(--primary-color);
+    color: var(--primary-color);
 }
 
 footer {
