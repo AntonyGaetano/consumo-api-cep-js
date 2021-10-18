@@ -75,10 +75,16 @@ document.getElementById("btn").addEventListener("click",()=>{
     document.getElementById("bairro").value,
     document.getElementById("cidade").value,
     document.getElementById("estado").value,
-
-    AtribuiValor()
  )
+ {
+ limparCampos();
+ document.getElementById("nome").value = "";
+ document.getElementById("email").value = "";
+ document.getElementById("cep").value = "";
+ document.getElementById("numero").value = "";
+ document.getElementById("btn2").style.display="flex";}
 })
 
 
 document.getElementById("cep").addEventListener("focusout",buscaCep);
+document.getElementById("btn2").addEventListener("click",AtribuiValor)
