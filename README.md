@@ -15,7 +15,7 @@
 <img src="gif/api_cep_telanot.gif">
 
 
-### Loyout para celulares e tablets
+### Layout para celulares e tablets
 <img src="gif//api_cep_telacll.gif">
 
 🚀Tecnologias usadas:
