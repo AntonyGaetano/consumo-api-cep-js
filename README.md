@@ -10,7 +10,7 @@
   - O estado
   - O endereço
 
-### Loyout para notebook e desktop
+### Layout para notebook e desktop
 
 <img src="gif/api_cep_telanot.gif">
 
